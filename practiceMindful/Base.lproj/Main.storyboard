@@ -171,7 +171,7 @@
         <!--View Controller-->
         <scene sceneID="tHq-57-nE6">
             <objects>
-                <viewController id="qP7-ef-2PH" sceneMemberID="viewController">
+                <viewController id="qP7-ef-2PH" customClass="ViewController" customModule="practiceMindful" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Erc-CO-Kxb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,6 +197,7 @@
                                 <state key="normal" title="1"/>
                                 <connections>
                                     <action selector="oneTapped:" destination="gRi-Fc-oef" eventType="touchUpInside" id="Tpq-1V-pHK"/>
+                                    <action selector="showMessageWithSender:" destination="qP7-ef-2PH" eventType="touchUpInside" id="TyL-Tg-8kW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNn-Fn-weJ">
@@ -205,6 +206,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="2"/>
                                 <connections>
+                                    <action selector="showMessageWithSender:" destination="qP7-ef-2PH" eventType="touchUpInside" id="8Sb-V0-xWT"/>
                                     <action selector="twoTapped:" destination="gRi-Fc-oef" eventType="touchUpInside" id="tBj-fa-R4N"/>
                                 </connections>
                             </button>
@@ -213,12 +215,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="qP7-ef-2PH" eventType="touchUpInside" id="hY8-UH-mO8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOt-si-AJp">
                                 <rect key="frame" x="351" y="502" width="30" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="qP7-ef-2PH" eventType="touchUpInside" id="UQ5-r5-bps"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="awful.." borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="noo-n7-K1X">
                                 <rect key="frame" x="20" y="562" width="74" height="30"/>
@@ -234,11 +242,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFP-rg-Pn2">
+                                <rect key="frame" x="116" y="760" width="159" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="take me home!"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="s7A-LT-P7d"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLI-Ax-H9Y">
                                 <rect key="frame" x="180" y="502" width="30" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="qP7-ef-2PH" eventType="touchUpInside" id="ryV-vd-wYV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
